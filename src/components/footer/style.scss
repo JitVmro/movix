@@ -49,8 +49,8 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    @include md{
-        gap: 20px;
+    @include md {
+      gap: 20px;
     }
     .icon {
       width: 50px;
@@ -62,9 +62,16 @@
       justify-content: center;
       cursor: pointer;
       transition: all ease 0.3s;
+      padding-top: 2px;
       &:hover {
         box-shadow: 0 0 0.625em var(--pink);
         color: var(--pink);
+        & .link {
+          color: var(--pink) !important;
+        }
+      }
+      .link {
+        color: #fff !important;
       }
     }
   }
